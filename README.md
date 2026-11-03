@@ -8,9 +8,10 @@ Interactive web portal (OEC): **http://oncoheel.com/**
 ## Project overview
 The OEC web server integrates data from 27 esophageal cancer cell lines, including gene mutation profiles and CRISPR‑knockout functional effects, to facilitate screening of esophageal cancer therapeutic targets.
 
-This repository holds only the **backend calculation algorithms**, decoupled from the web application.
-- The online website (http://oncoheel.com/) provides interactive graphical user interface for academic users.
-- **Web‑related components (Django ORM, request routing, page redirection, frontend JavaScript, HTML‑UI templates) are NOT deposited here.** These components only prepare and feed structured input data to the core functions and do **not alter any filtering, intersection or statistical calculation results**.
+This archive contains the full CRISPR knockout and mutation datasets of esophageal cancer TE cell lines used in the OEC manuscript for therapeutic target screening.
+The standalone core calculation script (pure_gene_analysis.py) is available at the public GitHub repository: https://github.com/chenchenhuang90-cloud/OHEC
+Interactive web portal: http://oncoheel.com/
+All the data in the manuscript can be accessed at https://doi.org/10.5281/zenodo.23912088 and on the website
 
 ## Core functions in `core_filter.py`
 1. `search_mutation_gene()`: Identify shared candidate genes across multiple esophageal cancer cell lines based on mutation data.
